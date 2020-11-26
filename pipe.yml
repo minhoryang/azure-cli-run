@@ -1,0 +1,14 @@
+name: Azure CLI
+image: bitbucketpipelines/azure-cli-run:0.0.0
+description: Run commands using the Azure CLI.
+category: Deployment
+repository: https://bitbucket.org/atlassian/azure-cli-run
+vendor:
+  name: Microsoft
+  website: https://azure.microsoft.com/
+maintainer:
+  name: Atlassian
+  website: https://www.atlassian.com/
+tags:
+    - azure
+    - cli
