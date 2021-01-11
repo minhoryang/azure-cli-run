@@ -1,5 +1,5 @@
 name: Azure CLI
-image: bitbucketpipelines/azure-cli-run:1.0.0
+image: bitbucketpipelines/azure-cli-run:1.0.1
 description: Run commands using the Azure CLI.
 category: Deployment
 repository: https://bitbucket.org/atlassian/azure-cli-run

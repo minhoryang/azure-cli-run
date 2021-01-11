@@ -10,7 +10,7 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 
 ```yaml
 script:
-  - pipe: atlassian/azure-cli-run:1.0.0
+  - pipe: atlassian/azure-cli-run:1.0.1
     variables:
       AZURE_APP_ID: $AZURE_APP_ID
       AZURE_PASSWORD: $AZURE_PASSWORD
@@ -53,7 +53,7 @@ Basic example:
 
 ```yaml
 script:
-  - pipe: atlassian/azure-cli-run:1.0.0
+  - pipe: atlassian/azure-cli-run:1.0.1
     variables:
       AZURE_APP_ID: $AZURE_APP_ID
       AZURE_PASSWORD: $AZURE_PASSWORD
@@ -65,7 +65,7 @@ Advanced example:
 
 ```yaml
 script:
-  - pipe: atlassian/azure-cli-run:1.0.0
+  - pipe: atlassian/azure-cli-run:1.0.1
     variables:
       AZURE_APP_ID: $AZURE_APP_ID
       AZURE_PASSWORD: $AZURE_PASSWORD
