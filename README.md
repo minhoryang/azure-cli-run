@@ -21,13 +21,13 @@ script:
 
 ## Variables
 
-| Variable              | Usage                                                       |
-| --------------------- | ----------------------------------------------------------- |
-| AZURE_APP_ID (*)        | The app ID, URL or name associated with the service principal required for login. |
-| AZURE_PASSWORD (*)      | Credentials like the service principal password, or path to certificate required for login. |
-| AZURE_TENANT_ID  (*)    | The AAD tenant required for login with the service principal. |
-| CLI_COMMAND           | A string representing the Azure cli command |
-| DEBUG                 | Turn on extra debug information. Default: `false`. |
+| Variable             | Usage                                                                                       |
+|----------------------|---------------------------------------------------------------------------------------------|
+| AZURE_APP_ID (*)     | The app ID, URL or name associated with the service principal required for login.           |
+| AZURE_PASSWORD (*)   | Credentials like the service principal password, or path to certificate required for login. |
+| AZURE_TENANT_ID  (*) | The AAD tenant required for login with the service principal.                               |
+| CLI_COMMAND          | A string representing the Azure cli command                                                 |
+| DEBUG                | Turn on extra debug information. Default: `false`.                                          |
 
 _(*) = required variable._
 
@@ -87,7 +87,7 @@ If you’re reporting an issue, please include:
 
 ## License
 Copyright (c) 2020 Atlassian and others.
-Apache 2.0 licensed, see [LICENSE](LICENSE) file.
+Apache 2.0 licensed, see [LICENSE](LICENSE.txt) file.
 
 
-[community]: https://community.atlassian.com/t5/forums/postpage/board-id/bitbucket-pipelines-questions?add-tags=pipes,azure,cli
+[community]: https://community.atlassian.com/t5/forums/postpage/board-id/bitbucket-questions?add-tags=bitbucket-pipelines,pipes,azure,cli
