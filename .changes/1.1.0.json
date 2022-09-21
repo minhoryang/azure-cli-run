@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Update azure-cli image to version 2.40.0.",
+    "type": "minor"
+  },
+  {
+    "description": "Internal maintenance: update bitbucket-pipes-toolkit-bash.",
+    "type": "patch"
+  },
+  {
+    "description": "Internal maintenance: update community link.",
+    "type": "patch"
+  },
+  {
+    "description": "Internal maintenance: update default image, pipe versions in bitbucket-pipelines.yml.",
+    "type": "patch"
+  }
+]
