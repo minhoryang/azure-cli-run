@@ -1,0 +1,16 @@
+# syntax=docker/dockerfile:1.6.0-labs
+
+FROM docker-public.packages.atlassian.com/bitbucketpipelines/azure-cli-run:1.2.0@sha256:73232faf74498048dfa647ad5e844131b8ce2183b3e47cccf315a89cb7353361
+RUN apk add patch
+RUN patch /usr/local/lib/python3.10/site-packages/azure/cli/command_modules/containerapp/custom.py <<EOF
+--- /usr/local/lib/python3.10/site-packages/azure/cli/command_modules/containerapp/custom.py
+@@ -592,7 +592,7 @@
+         scale_def["maxReplicas"] = max_replicas
+     # so we don't overwrite rules
+     if safe_get(new_containerapp, "properties", "template", "scale", "rules"):
+-        new_containerapp["properties"]["template"]["scale"].pop(["rules"])
++        new_containerapp["properties"]["template"]["scale"].pop("rules")
+     if scale_rule_name:
+         if not scale_rule_type:
+             scale_rule_type = "http"
+EOF
